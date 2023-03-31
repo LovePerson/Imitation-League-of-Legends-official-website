@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* 版心 */
+.inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* fr   右浮动 */
+.fr {
+    float: right;
+}
+
+/* 清浮动 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p,
+dl,
+dd {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    /* 解决图片下间隙问题 */
+    vertical-align: top;
+    /* 清除IE中图片加超链接时的外边框 */
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    /* 超链接颜色——根据设计稿定义 */
+    color: #333;
+}
+
+strong,
+b,
+th {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+del {
+    text-decoration: none;
+}
+
+table {
+    /* 相邻边框折叠 */
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+input {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+input,
+textarea {
+    /* 清除轮廓线——获取焦点状态时的外部边框 */
+    outline: none;
+}
+
+textarea {
+    /* 禁止用户重置元素大小 */
+    resize: none;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    box-sizing: content-box;
+}
